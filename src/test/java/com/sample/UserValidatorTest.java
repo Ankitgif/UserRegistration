@@ -29,5 +29,11 @@ public class UserValidatorTest {
         boolean result = userValidator.validateMobileNumber("91 8877150686");
         Assert.assertEquals(true, result);
     }
+    @Test
+    public void givenPassword_WhenProper_ShouldReturnTrue(){
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validatePassword("abcdefghijkl");
+        Assert.assertEquals(true, result);
+    }
 
 }
