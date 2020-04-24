@@ -10,7 +10,6 @@ public class UserValidatorTest {
         UserValidator userValidator = new UserValidator();
         boolean result = userValidator.validateFirstName("Ankit");
         Assert.assertEquals(true,result);
-
     }
     @Test
     public void givenLastName_WhenProper_ShouldReturnTrue(){
@@ -23,6 +22,12 @@ public class UserValidatorTest {
         UserValidator userValidator = new UserValidator();
         boolean result = userValidator.validateEmail("abc@yahoo.com");
         Assert.assertEquals(true,result);
+    }
+    @Test
+    public void givenMobileNumber_WhenProper_ShouldReturnTrue(){
+        UserValidator userValidator = new UserValidator();
+        boolean result = userValidator.validateMobileNumber("91 8877150686");
+        Assert.assertEquals(true, result);
     }
 
 }
