@@ -29,4 +29,8 @@ public class UserValidator {
         Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
         return pattern.matcher(password).matches();
     }
+    public boolean validateEmailAddress(String emailaddress){
+        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+        return pattern.matcher(emailaddress).matches();
+    }
 }
